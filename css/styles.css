@@ -1,0 +1,167 @@
+/*
+  base
+*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /*
+    The HTML font-size is set to 62.5% in order to make 'em' units easier to
+    work with. Modern browsers set their default font-size to 16px. This means
+    that 1em = 16px, which is a difficult base to work with (for example,
+    1.6em = 25.6px, which is not rounded). By setting the html's font-size to
+    62.5%, the base font-size becomes 10px, so 1em = 10px, and 1.6em = 16px.
+    The reason for making 'em' easier to work with is that 'em's scale with
+    the user's font-size preferences that they set in the browser, while
+    'px' is a fixed unit of measurement that doesn't scale.
+  */
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  color: rgba(0,0,0,0.87);
+  font-family: "Roboto", Arial, sans-serif;
+  /*
+    A font-size of 1.6em sets the default font-size on Oppia to 16px, though
+    this will scale depending on the user's font-size preferences set via
+    their browser preferences.
+  */
+  font-size: 1.6em;
+  height: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;
+  padding: 0;
+  width: 100%;
+  background-color: #e7e7e7;
+}
+
+a {
+  color: rgba(0,0,0,0.87);
+}
+
+.about-header {
+  background-color: #79ddd3;
+  color: white;
+  text-align: center;
+  padding: 10%;
+}
+
+.about-content {
+  background-color: #fff;
+  border-radius: 5px;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.about-page-card {
+  width: 90%;
+  padding: 5% 0;
+  margin: 0 auto;
+}
+
+.about-content-body {
+  width: 70%;
+}
+
+.contrib-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contrib-3cols {
+  width: calc((100% - 20px) / 3);
+  margin-right: 10px;
+}
+
+.contrib-3cols:last-of-type {
+  margin-right: 0;
+}
+
+.letter-groups {
+  margin: 3% 0;
+}
+
+.active {
+  color: #ff900d;
+}
+
+.visible {
+  position: relative;
+  opacity: 1;
+  transition: opacity .35s ease;
+  z-index: 3;
+}
+
+.hidden {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  z-index: 0;
+  transition: opacity 0s ease;
+}
+
+/*
+  components
+*/
+.about-page-card p {
+  line-height: 1.5em;
+}
+
+.about-content h2 {
+  text-align: center;
+  margin-top: 5%;
+  color: #ff900d;
+}
+
+.about-content p {
+  line-height: 1.5em;
+  margin: 5% 0;
+}
+
+.about-nav ul {
+  text-align: center;
+}
+
+.about-nav ul li {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  width: 33%;
+  box-shadow: 3px -1px 4px #e7e7e7;
+}
+
+.about-nav ul li a {
+  text-decoration: none;
+}
+
+.about-content-body button {
+  background-color: #ff900d;
+  position: relative;
+  left: 35%;
+  padding: 15px;
+  box-shadow: 0 3px 0 #e58314;
+  border: transparent;
+  color: #fff;
+}
+
+.letter-groups span {
+  color: #ff900d;
+  font-size: 1.8em;
+}
+
+.letter-groups ul li {
+  list-style-type: none;
+}
+
+/*
+  modules
+*/
+
+footer {
+  margin-top: 10%;
+}
