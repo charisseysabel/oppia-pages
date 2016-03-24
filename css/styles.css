@@ -86,6 +86,26 @@ a {
   margin: 3% 0;
 }
 
+.otter-container {
+  margin-top: 3%;
+}
+
+.otter-content {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.otter-question {
+  background-color: #fff;
+  display: inline;
+}
+
+.otter-buttons {
+  width: 100%;
+  background-color: #009090;
+  padding: 5%;
+}
+
 .active {
   color: #ff900d;
 }
@@ -139,7 +159,7 @@ a {
   text-decoration: none;
 }
 
-.about-content-body button {
+.about-page-buttons {
   background-color: #ff900d;
   position: relative;
   left: 35%;
@@ -157,6 +177,13 @@ a {
 .letter-groups ul li {
   list-style-type: none;
 }
+
+.otter-content img {
+  width: 30%;
+}
+
+
+
 
 /*
   modules
