@@ -160,6 +160,15 @@ a {
   components
 */
 
+strong {
+  color: #009788;
+}
+
+.inline-links {
+  color: #ff900d;
+  text-decoration: none;
+}
+
 .about-content h2 {
   text-align: center;
   margin-top: 5%;
