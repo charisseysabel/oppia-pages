@@ -66,8 +66,21 @@ a {
   width: 40%;
 }
 
-.about-extra-content {
+.about-extra-container {
   width: 100%;
+}
+
+.about-extra-content {
+  margin: 0 auto;
+}
+
+.about-extra-container h1,
+.about-extra-container h2,
+.about-extra-container h3,
+.about-extra-container h4,
+.about-extra-container h5,
+.about-extra-container h6 {
+  text-align: center;
 }
 
 .about-card-content-wide {
@@ -109,7 +122,6 @@ a {
 
 .about-extra-info {
   width: 100%;
-  padding: 5%;
   color: #fff;
 }
 
