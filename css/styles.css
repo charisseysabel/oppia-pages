@@ -193,7 +193,7 @@ strong {
   text-align: center;
 }
 
-.about-content p, .otter-content p {
+.about-content p {
   line-height: 1.5em;
   margin: 5% 0;
 }
@@ -234,13 +234,27 @@ strong {
 
 .about-page-buttons {
   background-color: #ff900d;
+  display: block;
+  margin: 0 auto;
+  width: 40%;
   cursor: pointer;
-  position: relative;
-  left: 35%;
   padding: 15px;
   box-shadow: 0 3px 0 #e58314;
   border: transparent;
   color: #fff;
+}
+
+.otter-button-container {
+  text-align: center;
+}
+
+.otter-buttons {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.otter-buttons:last-of-type {
+  margin-right: 0;
 }
 
 .letter-groups span {
@@ -271,13 +285,13 @@ footer {
   body {
     font-size: 1.7em;
   }
-  .about-content {
+  .about-content, .about-extra-content {
     width: 960px;
   }
 }
 
 @media only screen and (max-width: 800px) {
-  .about-content {
+  .about-content, .about-extra-content {
     width: 90%;
   }
   .about-nav ul li a {
@@ -289,9 +303,21 @@ footer {
   .about-nav ul li {
     width: 100%;
   }
+  .about-card-content-narrow {
+    width: 80%;
+  }
   .three-cols-layout {
     width: 100%;
     text-align: center;
+  }
+
+  .about-page-buttons {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+
+  .about-page-buttons:first-child {
+    margin: 0;
   }
 }
 
