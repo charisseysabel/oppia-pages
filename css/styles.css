@@ -248,3 +248,36 @@ strong {
 footer {
   margin-top: 10%;
 }
+
+/*
+  media queries
+*/
+
+@media only screen and (min-width: 1400px) {
+  body {
+    font-size: 1.7em;
+  }
+  .about-content {
+    width: 960px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .about-content {
+    width: 90%;
+  }
+  .about-nav ul li a {
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .about-nav ul li {
+    width: 100%;
+  }
+  .three-cols-layout {
+    width: 100%;
+    text-align: center;
+  }
+}
+
