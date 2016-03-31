@@ -47,6 +47,12 @@ a {
   color: rgba(0,0,0,0.87);
 }
 
+.clearfix {
+  display: table;
+  content: "";
+  clear: both;
+}
+
 .about-header {
   background-color: #79ddd3;
   color: #fff;
@@ -64,16 +70,22 @@ a {
   margin: 0 auto 3% auto;
 }
 
-.otter-content {
-  width: 40%;
-}
-
 .about-extra-container {
   width: 100%;
 }
 
 .about-extra-content {
+  width: 60%;
   margin: 0 auto;
+}
+
+.about-otter-container {
+  position: relative;
+}
+
+.otter-speech-card {
+  width: 50%;
+  float: right;
 }
 
 .about-extra-container h1,
@@ -119,14 +131,13 @@ a {
   margin: 0 0 10% 0;
 }
 
-.otter-question {
-  background-color: #fff;
-  display: inline;
-}
-
 .about-extra-info {
   width: 100%;
   color: #fff;
+}
+
+.about-otter-buttons {
+  background-color: #009788;
 }
 
 .about-get-involved {
@@ -200,6 +211,13 @@ strong {
   box-shadow: 3px -1px 4px #e7e7e7;
 }
 
+.about-page-otter {
+  width: 25%;
+  float: left;
+  top: 28px;
+  position: relative;
+}
+
 /*
   creators
 */
@@ -216,6 +234,7 @@ strong {
 
 .about-page-buttons {
   background-color: #ff900d;
+  cursor: pointer;
   position: relative;
   left: 35%;
   padding: 15px;
@@ -232,11 +251,6 @@ strong {
 .letter-groups ul li {
   list-style-type: none;
   line-height: 1.5em;
-}
-
-.otter-question h3 {
-  margin-bottom: 5%;
-  color: #009090;
 }
 
 
