@@ -22,44 +22,44 @@
 
   <div class="about-card about-content">
     <div class="about-nav">
-      <ul>
-        <li>
-          <a class="select-tab-1 active" href="#">
-            About Oppia
-          </a>
+      <ul class="about-tab-links">
+        <li class="about-active-tab">
+          <a href="about-tab-1">About Oppia</a>
         </li>
         <li>
-          <a class="select-tab-2" href="#">
-            The Oppia Foundation
-          </a>
+          <a href="about-tab-2">The Oppia Foundation</a>
         </li>
         <li>
-          <a class="select-tab-3" href="#">
-            Credits
-          </a>
+          <a href="about-tab-3">Credits</a>
         </li>
       </ul>
     </div> <!-- /about-nav -->
-    <div class="about-card-content-wide about-card-content-narrow tab-1 visible">
-      <h2>
-        Our Mission<br>
-        To help anyone learn anything they want in an effective and
-        enjoyable way.
-      </h2>
-      <p>
-        Oppia means "learn" in Finnish, and this site is all about learning and
-        sharing knowledge! Oppia is a free, open-source learning platform that
-        offers interactive learning modules that recreate the power of 1-on-1 tutoring.
-        Our unique technology allows anyone to create these learning modules, or,
-        as we call them, explorations, to share their knowledge in the most effective and
-        efficient way. Since these explorations adapt to the needs and the current knowledge
-        of learners, Oppia provides an enriched learning experience. Oppia's explorations cover
-        a variey of subjects, like mathematics, biology, and programming, and are offered
-        in various languages made by unique individuals like you.
-      </p>
-      <button class="about-page-buttons">See how Oppia works</button>
-    </div><!-- /MISSION about-card-content-wide about-card-content-narrow -->
-    <div class="about-card-content-wide about-card-content-narrow tab-2 hidden">
+
+  <div class="about-tab-container">
+    <div class="about-tab-1 about-tab-content about-visible-content">
+      <div class="about-card-content-wide about-card-content-narrow">
+        <h2>
+          Our Mission<br>
+          To help anyone learn anything they want in an effective and
+          enjoyable way.
+        </h2>
+        <p>
+          Oppia means "learn" in Finnish, and this site is all about learning and
+          sharing knowledge! Oppia is a free, open-source learning platform that
+          offers interactive learning modules that recreate the power of 1-on-1 tutoring.
+          Our unique technology allows anyone to create these learning modules, or,
+          as we call them, explorations, to share their knowledge in the most effective and
+          efficient way. Since these explorations adapt to the needs and the current knowledge
+          of learners, Oppia provides an enriched learning experience. Oppia's explorations cover
+          a variey of subjects, like mathematics, biology, and programming, and are offered
+          in various languages made by unique individuals like you.
+        </p>
+        <button class="about-page-buttons">See how Oppia works</button>
+      </div><!-- /MISSION about-card-content-wide about-card-content-narrow -->
+    </div><!-- /tab -->
+
+  <div class="about-tab-2 about-tab-content">
+    <div class="about-card-content-wide about-card-content-narrow">
       <h2>The Oppia Foundation</h2>
       <p>
         The Oppia website and source code are supported by the Oppia Foundation,
@@ -87,7 +87,10 @@
         <a href="https://www.apache.org/licenses/" class="inline-links">Apache 2.0</a> license.
       </p>
     </div><!-- /FOUNDATION about-card-content-wide about-card-content-narrow -->
-    <div class="about-card-content-wide tab-3 hidden">
+  </div><!-- /tab -->
+
+  <div class="about-tab-3 about-tab-content">
+    <div class="about-card-content-wide">
       <h2>Oppia Contributors</h2>
       <p>
         The Oppia development team is also grateful for the feedback, ideas,
@@ -332,57 +335,61 @@
         </div><!-- /RIGHT three-cols-layout -->
       </div><!-- /three-cols-container -->
     </div><!-- /CONTRIBUTORS about-card-content-wide -->
-  </div><!-- /about-content -->
+  </div><!-- /tab -->
+  </div><!-- /tab-container -->
+</div><!-- /about-content -->
 
-<div class="about-extra-container">
-  <div class="about-extra-content tab-1 visible clearfix">
-    <div class="about-otter-container">
-      <img src="img/about-page-otter.png" class="about-page-otter" alt="Otter">
-    </div>
-    <div class="about-card otter-speech-card tab-1 visible">
-      <div class="about-card-content-wide">
-        <h3 >What do you want to do today?</h3>
-      </div><!-- /about-card-content-wide -->
-    </div><!-- /about-card -->
-  </div><!-- /about-content -->
+<div class="about-extra-container about-tab-container">
+  <div class="about-tab-1 about-tab-content about-visible-content">
+    <div class="about-extra-content clearfix">
+      <div class="about-otter-container">
+        <img src="img/about-page-otter.png" class="about-page-otter" alt="Otter">
+      </div>
+      <div class="about-card otter-speech-card">
+        <div class="about-card-content-wide">
+          <h3 >What do you want to do today?</h3>
+        </div><!-- /about-card-content-wide -->
+      </div><!-- /about-card -->
+    </div><!-- /about-content -->
 
-  <div class="about-extra-info about-otter-buttons tab-1 visible">
-    <div class="about-content about-extra-content">
-      <div class="about-card-content-wide about-card-content-narrow otter-button-container">
-        <button href="#" class="about-page-buttons otter-buttons">I want to learn</button>
-        <button href="#" class="about-page-buttons otter-buttons">I want to teach</button>
+    <div class="about-extra-info about-otter-buttons">
+      <div class="about-content about-extra-content">
+        <div class="about-card-content-wide about-card-content-narrow otter-button-container">
+          <button href="#" class="about-page-buttons otter-buttons">I want to learn</button>
+          <button href="#" class="about-page-buttons otter-buttons">I want to teach</button>
+        </div>
       </div>
     </div>
   </div>
 
-
-
-  <div class="about-extra-info about-get-involved tab-2 hidden">
-    <div class="about-content about-extra-content">
-      <div class="about-card-content-wide about-card-content-narrow">
-        <h3>Get involved!</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Aenean vel tristique turpis, in facilisis diam. Donec ornare rutrum finibus.
-          Sed pulvinar justo et mollis aliquam. Curabitur et sapien porttitor,
-          scelerisque ante et, tempus velit. Ut metus urna, bibendum porta molestie in, cursus in augue.
-        </p>
-        <p>
-          For site questions:<br>
-          Post to our <a href="{{SITE_FORUM_URL}}" class="inline-links">forum</a>
-        </p>
-        <p>
-          For bugs and feature requests:<br>
-          Create an issue on our Oppia <a href="https://github.com/oppia/oppia/issues/new?title=Describe%20your%20feature%20request%20or%20bug%20report%20succinctly&body=If%20you%27d%20like%20to%20propose%20a%20feature,%20describe%20what%20you%27d%20like%20to%20see.%20Mock%20ups%20would%20be%20great!%0A%0AIf%20you%27re%20reporting%20a%20bug,%20please%20be%20sure%20to%20include%20the%20expected%20behaviour,%20the%20observed%20behaviour,%20and%20steps%20to%20reproduce%20the%20problem.%20Console%20copy-pastes%20and%20any%20background%20on%20the%20environment%20would%20also%20be%20helpful.%0A%0AThanks!" class="inline-links">bug tracker</a><br>
-          or get in touch via the <a href="https://groups.google.com/forum/#!forum/oppia-dev" class="inline-links">developer's forum</a>
-        </p>
-        <p>
-          For security issues:<br>
-          Write to <a href="{{CONTACT_EMAIL_ADDRESS}}" class="inline-links">admin@oppia.org</a>
-        </p>
-      </div><!-- /about-card-content-wide -->
-    </div><!-- /about-content -->
-  </div><!-- /about-get-involved -->
+  <div class="about-tab-2 about-tab-content">
+    <div class="about-extra-info about-get-involved">
+      <div class="about-content about-extra-content">
+        <div class="about-card-content-wide about-card-content-narrow">
+          <h3>Get involved!</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Aenean vel tristique turpis, in facilisis diam. Donec ornare rutrum finibus.
+            Sed pulvinar justo et mollis aliquam. Curabitur et sapien porttitor,
+            scelerisque ante et, tempus velit. Ut metus urna, bibendum porta molestie in, cursus in augue.
+          </p>
+          <p>
+            For site questions:<br>
+            Post to our <a href="{{SITE_FORUM_URL}}" class="inline-links">forum</a>
+          </p>
+          <p>
+            For bugs and feature requests:<br>
+            Create an issue on our Oppia <a href="https://github.com/oppia/oppia/issues/new?title=Describe%20your%20feature%20request%20or%20bug%20report%20succinctly&body=If%20you%27d%20like%20to%20propose%20a%20feature,%20describe%20what%20you%27d%20like%20to%20see.%20Mock%20ups%20would%20be%20great!%0A%0AIf%20you%27re%20reporting%20a%20bug,%20please%20be%20sure%20to%20include%20the%20expected%20behaviour,%20the%20observed%20behaviour,%20and%20steps%20to%20reproduce%20the%20problem.%20Console%20copy-pastes%20and%20any%20background%20on%20the%20environment%20would%20also%20be%20helpful.%0A%0AThanks!" class="inline-links">bug tracker</a><br>
+            or get in touch via the <a href="https://groups.google.com/forum/#!forum/oppia-dev" class="inline-links">developer's forum</a>
+          </p>
+          <p>
+            For security issues:<br>
+            Write to <a href="{{CONTACT_EMAIL_ADDRESS}}" class="inline-links">admin@oppia.org</a>
+          </p>
+        </div><!-- /about-card-content-wide -->
+      </div><!-- /about-content -->
+    </div><!-- /about-get-involved -->
+  </div><!-- /tab -->
 </div><!-- /about-extra-container -->
 
 
@@ -390,43 +397,15 @@
 	 <script src="scripts/jquery-2.1.1.js"></script>
 	<script>
     $(document).ready(function() {
-      $(".select-tab-1").click(function(event) {
+      $(".about-tab-links li").on("click", function(event) {
         event.preventDefault();
-        var activeTab = $(".active");
-        var visibleTab = $(".visible");
-
-        visibleTab.removeClass("visible").addClass("hidden");
-        activeTab.removeClass("active");
-
-        $(this).addClass("active");
-        $(".tab-1").removeClass("hidden").addClass("visible");
-
+        var tabIndex = $(this).index();
+        // change tab color
+        $(this).addClass("about-active-tab").siblings().removeClass("about-active-tab");
+        // show/hide tab contents
+        var currentAttrVal = $(this).children("a").attr("href");
+        $("." + currentAttrVal).addClass("about-visible-content").siblings().removeClass("about-visible-content");
       });
-
-      $(".select-tab-2").click(function(event) {
-        event.preventDefault();
-        var activeTab = $(".active");
-        var visibleTab = $(".visible");
-
-        visibleTab.removeClass("visible").addClass("hidden");
-        activeTab.removeClass("active");
-
-        $(this).addClass("active");
-        $(".tab-2").removeClass("hidden").addClass("visible");
-      });
-
-      $(".select-tab-3").click(function(event) {
-        event.preventDefault();
-        var activeTab = $(".active");
-        var visibleTab = $(".visible");
-
-        visibleTab.removeClass("visible").addClass("hidden");
-        activeTab.removeClass("active");
-
-        $(this).addClass("active");
-        $(".tab-3").removeClass("hidden").addClass("visible");
-      });
-
     });
 
 

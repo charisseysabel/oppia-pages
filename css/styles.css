@@ -152,23 +152,19 @@ a {
   background-color: #0d8885;
 }
 
-.active {
+.about-active-tab a {
   color: #ff900d;
 }
 
-.visible {
-  position: relative;
-  opacity: 1;
-  transition: opacity .35s ease;
-  z-index: 3;
+.about-tab-content {
+  display: none;
 }
 
-.hidden {
-  position: absolute;
-  display: none;
-  opacity: 0;
-  z-index: 0;
-  transition: opacity 0s ease;
+.about-visible-content {
+  position: relative;
+  opacity: 1;
+  display: block;
+  transition: opacity .35s ease;
 }
 
 /*
@@ -198,13 +194,13 @@ strong {
   margin: 5% 0;
 }
 
-.about-nav ul {
+.about-tab-links {
   text-align: center;
   display: flex;
   flex-wrap: wrap;
 }
 
-.about-nav ul li {
+.about-tab-links li {
   display: inline-block;
   cursor: pointer;
   width: calc(100% / 3);
@@ -226,7 +222,7 @@ strong {
   width: calc(100% / 2);
 }
 
-.about-nav ul li a {
+.about-tab-links li a {
   display: block;
   padding: 10px;
   text-decoration: none;
@@ -294,13 +290,13 @@ footer {
   .about-content, .about-extra-content {
     width: 90%;
   }
-  .about-nav ul li a {
+  .about-tab-links li a {
     padding: 20px;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .about-nav ul li {
+  .about-tab-links li {
     width: 100%;
   }
   .about-card-content-narrow {
