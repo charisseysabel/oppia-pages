@@ -230,6 +230,7 @@ strong {
 
 .about-page-buttons {
   background-color: #ff900d;
+  text-decoration: none;
   display: block;
   margin: 0 auto;
   width: 40%;
