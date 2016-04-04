@@ -20,16 +20,16 @@
     <h1>Be Part of a Community of Learners</h1>
   </div>
 
-  <div class="about-card about-content">
-    <div class="about-nav">
+  <div class="oppia-page-card about-content">
+    <div class="about-nav oppia-profile-tabs md-tab">
       <ul class="about-tab-links">
-        <li class="about-active-tab">
+        <li class="oppia-profile-tabs about-active-tab">
           <a href="about-tab-1">About Oppia</a>
         </li>
-        <li>
+        <li class="oppia-profile-tabs">
           <a href="about-tab-2">The Oppia Foundation</a>
         </li>
-        <li>
+        <li class="oppia-profile-tabs">
           <a href="about-tab-3">Credits</a>
         </li>
       </ul>
@@ -54,7 +54,6 @@
           a variey of subjects, like mathematics, biology, and programming, and are offered
           in various languages made by unique individuals like you.
         </p>
-        <a class="about-page-buttons">See how Oppia works</a>
       </div><!-- /MISSION about-card-content-wide about-card-content-narrow -->
     </div><!-- /tab -->
 
@@ -343,20 +342,20 @@
   <div class="about-tab-1 about-tab-content about-visible-content">
     <div class="about-extra-content clearfix">
       <div class="about-otter-container">
-        <img src="img/about-page-otter.png" class="about-page-otter" alt="Otter">
+        <img src="images/about-page-otter.png" class="about-page-otter" alt="Otter">
       </div>
       <div class="otter-speech-card">
         <blockquote class="otter-speech-bubble">
           <h3 >What do you want to do today?</h3>
         </blockquote><!-- /about-card-content-wide -->
-      </div><!-- /about-card -->
+      </div><!-- /otter-speech-card -->
     </div><!-- /about-content -->
 
     <div class="about-extra-info about-otter-buttons">
       <div class="about-content about-extra-content">
         <div class="about-card-content-wide about-card-content-narrow otter-button-container">
-          <a href="#" class="about-page-buttons otter-buttons">I want to learn</a>
-          <a href="#" class="about-page-buttons otter-buttons">I want to teach</a>
+          <a href="/gallery" class="btn about-page-buttons">I want to learn</a>
+          <a href="/teach" class="btn about-page-buttons">I want to teach</a>
         </div>
       </div>
     </div>
@@ -393,9 +392,9 @@
 </div><!-- /about-extra-container -->
 
 
-	<!-- JS -->
-	 <script src="scripts/jquery-2.1.1.js"></script>
-	<script>
+  <!-- JS -->
+   <script src="scripts/jquery-2.1.1.js"></script>
+  <script>
     $(document).ready(function() {
       $(".about-tab-links li").on("click", function(event) {
         event.preventDefault();
