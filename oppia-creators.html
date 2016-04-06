@@ -25,7 +25,7 @@
           </a>
         </li>
         <li class="oppia-profile-tabs about-active-tab">
-          <a href="about-tab-1">
+          <a href="about-tab-2">
             Participation Playbook
           </a>
         </li>
@@ -77,7 +77,7 @@
     </div><!-- /teach on oppia -->
 
     <div class="about-tab-2 about-tab-content">
-      <div class="about-card-content-wide about-card-content-narrow tab-2 hidden">
+      <div class="about-card-content-wide about-card-content-narrow">
         <h2>Community Guidelines</h2>
         <ol>
           <li>
@@ -247,43 +247,15 @@
    <script src="scripts/jquery-2.1.1.js"></script>
   <script>
     $(document).ready(function() {
-      $(".select-tab-1").click(function(event) {
+      $(".about-tab-links li").on("click", function(event) {
         event.preventDefault();
-        var activeTab = $(".active");
-        var visibleTab = $(".visible");
-
-        visibleTab.removeClass("visible").addClass("hidden");
-        activeTab.removeClass("active");
-
-        $(this).addClass("active");
-        $(".tab-1").removeClass("hidden").addClass("visible");
-
+        var tabIndex = $(this).index();
+        // change tab color
+        $(this).addClass("about-active-tab").siblings().removeClass("about-active-tab");
+        // show/hide tab contents
+        var currentAttrVal = $(this).children("a").attr("href");
+        $("." + currentAttrVal).addClass("about-visible-content").siblings().removeClass("about-visible-content");
       });
-
-      $(".select-tab-2").click(function(event) {
-        event.preventDefault();
-        var activeTab = $(".active");
-        var visibleTab = $(".visible");
-
-        visibleTab.removeClass("visible").addClass("hidden");
-        activeTab.removeClass("active");
-
-        $(this).addClass("active");
-        $(".tab-2").removeClass("hidden").addClass("visible");
-      });
-
-      $(".select-tab-3").click(function(event) {
-        event.preventDefault();
-        var activeTab = $(".active");
-        var visibleTab = $(".visible");
-
-        visibleTab.removeClass("visible").addClass("hidden");
-        activeTab.removeClass("active");
-
-        $(this).addClass("active");
-        $(".tab-3").removeClass("hidden").addClass("visible");
-      });
-
     });
   </script>
 </body>
