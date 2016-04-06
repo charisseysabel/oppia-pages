@@ -225,8 +225,7 @@ strong {
   display: inline-block;
   cursor: pointer;
   width: calc(100% / 3);
-  background-color: #009688;
-  border: 1px solid rgba(0,0,0,0.1);
+  border-right: 1px solid rgba(0,0,0,0.1);
   padding: 10px;
   margin-bottom: 0;
 }
@@ -244,11 +243,6 @@ strong {
 
 .about-tab-links {
   padding: 0;
-}
-
-.about-tab-links li a {
-  color: #fff;
-  text-decoration: none;
 }
 
 .about-page-buttons {
